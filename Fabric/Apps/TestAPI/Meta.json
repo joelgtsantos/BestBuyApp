@@ -1,0 +1,15 @@
+{
+  "subType" : "customapp",
+  "description" : "TestAPI",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "BestBuyJAPI",
+    "version" : "1.0",
+    "etag" : "2a88e1e5-5afb-45c9-a133-aa0fb5e375f7"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "BestBJAPI",
+    "version" : "1.0",
+    "etag" : "cf407cd0-d2cb-4c83-8ef6-1c7244b82a45"
+  } ]
+}

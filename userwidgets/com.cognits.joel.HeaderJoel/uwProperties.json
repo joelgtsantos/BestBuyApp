@@ -1,0 +1,68 @@
+{
+    "classname": "HeaderJoel",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ffbd531257d64e40954c2ccd5617f46f",
+                    "originalPropertyKey": "onTouchStart",
+                    "propertyIndex": 1,
+                    "propertyKey": "onClickBtnBack",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onClickBtnBack",
+                        "srcWidget": "btnBack",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "d44e2cf05e894d328618834a60b5d12a"
+                }
+            ]
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "i213cf80c84741549038a9df16a4df40",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 1,
+                    "propertyKey": "isVisibleBtnBack",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "isVisibleBtnBack",
+                        "srcWidget": "btnBack",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "d44e2cf05e894d328618834a60b5d12a"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.cognits.joel",
+    "version": "1.0.0"
+}

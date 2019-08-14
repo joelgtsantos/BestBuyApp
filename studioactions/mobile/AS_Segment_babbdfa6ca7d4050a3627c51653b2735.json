@@ -1,0 +1,30 @@
+{
+    "AS_Segment_babbdfa6ca7d4050a3627c51653b2735": {
+        "id": "AS_Segment_babbdfa6ca7d4050a3627c51653b2735",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmProductsList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "gd982034bb564b06a3c4e8b327c8d95a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a485a9281a1d46ff94857df789cabf34",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onProductDetails(rowNumber);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

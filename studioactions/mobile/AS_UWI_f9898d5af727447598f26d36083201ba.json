@@ -1,0 +1,24 @@
+{
+    "AS_UWI_f9898d5af727447598f26d36083201ba": {
+        "id": "AS_UWI_f9898d5af727447598f26d36083201ba",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmProductsList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "gd982034bb564b06a3c4e8b327c8d95a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__hfdfb547f74d4431be5151747ae99967",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onBtnBackClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

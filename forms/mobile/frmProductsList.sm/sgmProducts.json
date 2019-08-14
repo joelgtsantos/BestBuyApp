@@ -1,0 +1,144 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgProduct": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "lblAvgRating": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblCurrency": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$"
+            },
+            "lblProductName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblProductPrice": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblRating": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Avg User Rating:"
+            },
+            "lblSale": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "!!!ON SALE!!!"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "sgmProducts",
+    "ide_onRowClick": "AS_Segment_babbdfa6ca7d4050a3627c51653b2735",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "eb8ff01894c247d4a01a0eb93d0017f3",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxMain",
+    "pf": "frmProductsList",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "b7440196d9f34723bb81789aebd9acc7",
+    "rowcounter": 0,
+    "rowfocusskin": "s639e31465cc4172864a8896446dc5aa",
+    "rowskin": "sc9db0d4efe3484190500a5b86ab96a1",
+    "rowtemplate": "flxProductList",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sdfd831d1e694440adacde62520b3a52",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxContainer": "flxContainer",
+        "flxImage": "flxImage",
+        "flxPrice": "flxPrice",
+        "flxProductList": "flxProductList",
+        "flxRating": "flxRating",
+        "flxSale": "flxSale",
+        "flxWrapper": "flxWrapper",
+        "imgProduct": "imgProduct",
+        "lblAvgRating": "lblAvgRating",
+        "lblCurrency": "lblCurrency",
+        "lblProductName": "lblProductName",
+        "lblProductPrice": "lblProductPrice",
+        "lblRating": "lblRating",
+        "lblSale": "lblSale"
+    },
+    "zindex": 1
+}

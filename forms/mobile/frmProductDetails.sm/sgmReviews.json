@@ -1,0 +1,449 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgStar0": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar1": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar2": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar3": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar4": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "lblAuthor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgStar0": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar1": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar2": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar3": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar4": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "lblAuthor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgStar0": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar1": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar2": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar3": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar4": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "lblAuthor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgStar0": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar1": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar2": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar3": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar4": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "lblAuthor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgStar0": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar1": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar2": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar3": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar4": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "lblAuthor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgStar0": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar1": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar2": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar3": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar4": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "lblAuthor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgStar0": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar1": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar2": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar3": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar4": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "lblAuthor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgStar0": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar1": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar2": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar3": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar4": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "lblAuthor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgStar0": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar1": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar2": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar3": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar4": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "lblAuthor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgStar0": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar1": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar2": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar3": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "imgStar4": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "konymp_pl_star_inactive.png"
+            },
+            "lblAuthor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "sgmReviews",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ge13044df85848f2b96fdaa92dcfbfad",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxReviewsContainer",
+    "pf": "frmProductDetails",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "d42cce18f3db4491954bf60c271a4e4b",
+    "rowcounter": 9,
+    "rowfocusskin": "s639e31465cc4172864a8896446dc5aa",
+    "rowskin": "sc9db0d4efe3484190500a5b86ab96a1",
+    "rowtemplate": "flxContainer",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sdfd831d1e694440adacde62520b3a52",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": null,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxContainer": "flxContainer",
+        "flxStars": "flxStars",
+        "imgStar0": "imgStar0",
+        "imgStar1": "imgStar1",
+        "imgStar2": "imgStar2",
+        "imgStar3": "imgStar3",
+        "imgStar4": "imgStar4",
+        "lblAuthor": "lblAuthor",
+        "lblComment": "lblComment",
+        "lblTitle": "lblTitle"
+    },
+    "zindex": 1
+}
