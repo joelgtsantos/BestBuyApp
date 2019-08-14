@@ -18,10 +18,6 @@ define("com/cognits/joel/HeaderJoel/HeaderJoelControllerActions", {
     /*
       This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
-    /** onTouchStart defined for btnBack **/
-    AS_Image_ba88e24304924dfd9330b48d44959324: function AS_Image_ba88e24304924dfd9330b48d44959324(eventobject, x, y) {
-        var self = this;
-    }
 });
 define("com/cognits/joel/HeaderJoel/HeaderJoelController", ["com/cognits/joel/HeaderJoel/userHeaderJoelController", "com/cognits/joel/HeaderJoel/HeaderJoelControllerActions"], function() {
     var controller = require("com/cognits/joel/HeaderJoel/userHeaderJoelController");
@@ -43,6 +39,11 @@ define("com/cognits/joel/HeaderJoel/HeaderJoelController", ["com/cognits/joel/He
     controller.AS_onClickBtnBack_d44e2cf05e894d328618834a60b5d12a = function() {
         if (this.onClickBtnBack) {
             this.onClickBtnBack.apply(this, arguments);
+        }
+    }
+    controller.AS_onClickBtnSearch_a76e84e9838c452aac0352e1b396e0dd = function() {
+        if (this.onClickBtnSearch) {
+            this.onClickBtnSearch.apply(this, arguments);
         }
     }
     return controller;

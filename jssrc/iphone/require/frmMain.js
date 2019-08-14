@@ -51,6 +51,7 @@ define("frmMain", function() {
                 "overrides": {}
             });
             HeaderJoel.onClickBtnBack = controller.AS_UWI_e011a332b7ae474a9e1eca91491c720f;
+            HeaderJoel.onClickBtnSearch = controller.AS_UWI_d4fb4673379b49b386e3a28216a4898e;
             var flxContainer = new kony.ui.FlexContainer({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "clipBounds": true,
@@ -120,6 +121,7 @@ define("frmMain", function() {
                 "retainFlowHorizontalAlignment": false
             }, {});
             flxMain.setDefaultUnit(kony.flex.DP);
+            kony.mvc.registry.add('Categories', 'Categories', 'CategoriesController');
             var sgmCategories = new kony.ui.SegmentedUI2({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "data": [{
@@ -171,7 +173,108 @@ define("frmMain", function() {
             flxMain.add(sgmCategories);
             flxContainer.add(flxNavigation, flxMain);
             flxWrapper.add(HeaderJoel, flxContainer);
-            this.add(flxWrapper);
+            var flxHMenu = new kony.ui.FlexContainer({
+                "autogrowMode": kony.flex.AUTOGROW_NONE,
+                "clipBounds": true,
+                "height": "100%",
+                "id": "flxHMenu",
+                "isVisible": true,
+                "layoutType": kony.flex.FREE_FORM,
+                "isModalContainer": false,
+                "right": "-100%",
+                "skin": "CopyslFbox0a179a81bbf514a",
+                "top": "0dp",
+                "width": "100%",
+                "zIndex": 1
+            }, {
+                "retainFlowHorizontalAlignment": false
+            }, {});
+            flxHMenu.setDefaultUnit(kony.flex.DP);
+            var flxSearch = new kony.ui.FlexContainer({
+                "autogrowMode": kony.flex.AUTOGROW_NONE,
+                "clipBounds": true,
+                "height": "50dp",
+                "id": "flxSearch",
+                "isVisible": true,
+                "layoutType": kony.flex.FLOW_HORIZONTAL,
+                "left": "0dp",
+                "isModalContainer": false,
+                "skin": "slFbox",
+                "top": "20dp",
+                "width": "100%",
+                "zIndex": 1
+            }, {
+                "retainFlowHorizontalAlignment": false
+            }, {});
+            flxSearch.setDefaultUnit(kony.flex.DP);
+            var imgReturn = new kony.ui.Image2({
+                "height": "30dp",
+                "id": "imgReturn",
+                "isVisible": true,
+                "left": "0dp",
+                "onTouchStart": controller.AS_Image_f95c257016484171b47c03c2f035d9a0,
+                "skin": "slImage",
+                "src": "back_button.png",
+                "top": "12dp",
+                "width": "50dp",
+                "zIndex": 1
+            }, {
+                "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var txtSearch = new kony.ui.TextBox2({
+                "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+                "focusSkin": "defTextBoxFocus",
+                "height": "40dp",
+                "id": "txtSearch",
+                "isVisible": true,
+                "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
+                "left": "10dp",
+                "placeholder": "Search product",
+                "secureTextEntry": false,
+                "skin": "defTextBoxNormal",
+                "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
+                "top": "7dp",
+                "width": "60%",
+                "zIndex": 1
+            }, {
+                "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [3, 0, 0, 0],
+                "paddingInPixel": false
+            }, {
+                "autoCorrect": false,
+                "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_DONE,
+                "placeholderSkin": "defTextBoxPlaceholder",
+                "showClearButton": true,
+                "showCloseButton": true,
+                "showProgressIndicator": true,
+                "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
+            });
+            var btnSearch = new kony.ui.Button({
+                "focusSkin": "defBtnFocus",
+                "height": "40dp",
+                "id": "btnSearch",
+                "isVisible": true,
+                "left": 10,
+                "right": 50,
+                "skin": "CopydefBtnNormal0h6fc2330b8ff4f",
+                "text": "Search",
+                "top": "7dp",
+                "width": "60dp",
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "displayText": true,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {
+                "showProgressIndicator": true
+            });
+            flxSearch.add(imgReturn, txtSearch, btnSearch);
+            flxHMenu.add(flxSearch);
+            this.add(flxWrapper, flxHMenu);
         };
         return [{
             "addWidgets": addWidgetsfrmMain,
@@ -179,7 +282,10 @@ define("frmMain", function() {
             "id": "frmMain",
             "layoutType": kony.flex.FREE_FORM,
             "needAppMenu": false,
-            "skin": "slForm"
+            "skin": "slForm",
+            "info": {
+                "kuid": "b185dbf691a64e2fbc3568cad0aa1a7d"
+            }
         }, {
             "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,
             "layoutType": kony.flex.FREE_FORM,

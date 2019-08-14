@@ -11,7 +11,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "ffbd531257d64e40954c2ccd5617f46f",
+                    "kuid": "eb452f50fb044434a54fe4aab35baf7e",
                     "originalPropertyKey": "onTouchStart",
                     "propertyIndex": 1,
                     "propertyKey": "onClickBtnBack",
@@ -25,6 +25,24 @@
                         "wType": "Image"
                     },
                     "srcWgtKUID": "d44e2cf05e894d328618834a60b5d12a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "bb6817140de64094bf3851822a434a40",
+                    "originalPropertyKey": "onTouchStart",
+                    "propertyIndex": 2,
+                    "propertyKey": "onClickBtnSearch",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onClickBtnSearch",
+                        "srcWidget": "btnSearch",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "a76e84e9838c452aac0352e1b396e0dd"
                 }
             ]
         },

@@ -73,5 +73,49 @@ define({
     this.currentCategories  =  this.categoriesNav[this.categoriesNav.length - 1];
     this.view.sgmCategories.removeAll();
   	this.view.sgmCategories.setData(this.currentCategories);
+  },
+  /*
+  * To go back to a previous Product List within the same form
+  */
+  onClickBtnSearch: function onClickBtnSearch(){
+     try {
+        this.view.flxHMenu.animate(kony.ui.createAnimation({
+            "100": {
+                "right": "0%",
+                "stepConfig": {
+                    "timingFunction": kony.anim.EASE
+                }
+            }
+        }), {
+            "delay": 0,
+            "iterationCount": 1,
+            "fillMode": kony.anim.FILL_MODE_FORWARDS,
+            "duration": 0.7
+        }, {
+            "animationEnd": function() {}
+        });
+    } catch (e) {}
+  },
+/*
+  * To go back to a previous Product List within the same form
+  */
+  onClickBtnClose: function onClickBtnClose(){
+     try {
+        this.view.flxHMenu.animate(kony.ui.createAnimation({
+            "100": {
+                "right": "-100%",
+                "stepConfig": {
+                    "timingFunction": kony.anim.EASE
+                }
+            }
+        }), {
+            "delay": 0,
+            "iterationCount": 1,
+            "fillMode": kony.anim.FILL_MODE_FORWARDS,
+            "duration": 0.7
+        }, {
+            "animationEnd": function() {}
+        });
+    } catch (e) {}
   }
  });

@@ -3,6 +3,7 @@ function skinsInit() {
     CopyCopyslImage5 = "CopyCopyslImage5";
     CopyCopysliPhoneSegmentHeader5 = "CopyCopysliPhoneSegmentHeader5";
     CopydefBtnNormal0h3eb70a63acd40 = "CopydefBtnNormal0h3eb70a63acd40";
+    CopydefBtnNormal0h6fc2330b8ff4f = "CopydefBtnNormal0h6fc2330b8ff4f";
     CopydefLabel0b6bf4fccddc847 = "CopydefLabel0b6bf4fccddc847";
     CopydefLabel0be7e5898ac064a = "CopydefLabel0be7e5898ac064a";
     CopydefLabel0cc1728bca4bf44 = "CopydefLabel0cc1728bca4bf44";
@@ -15,6 +16,7 @@ function skinsInit() {
     CopydefLabel0j59ce0a1bda840 = "CopydefLabel0j59ce0a1bda840";
     Copyseg04e93bcaf53d242 = "Copyseg04e93bcaf53d242";
     Copyseg0cddf1f7e9db24a = "Copyseg0cddf1f7e9db24a";
+    CopyslFbox0a179a81bbf514a = "CopyslFbox0a179a81bbf514a";
     CopyslFbox0e8caf6165cdd49 = "CopyslFbox0e8caf6165cdd49";
     CopyslForm07c0ae13367f944 = "CopyslForm07c0ae13367f944";
     CopyslLabel0a625a35ab5ef44 = "CopyslLabel0a625a35ab5ef44";
@@ -24,6 +26,9 @@ function skinsInit() {
     defBtnFocus = "defBtnFocus";
     defBtnNormal = "defBtnNormal";
     defLabel = "defLabel";
+    defTextBoxFocus = "defTextBoxFocus";
+    defTextBoxNormal = "defTextBoxNormal";
+    defTextBoxPlaceholder = "defTextBoxPlaceholder";
     konympPLsknLblStock = "konympPLsknLblStock";
     seg2Focus = "seg2Focus";
     seg2Normal = "seg2Normal";

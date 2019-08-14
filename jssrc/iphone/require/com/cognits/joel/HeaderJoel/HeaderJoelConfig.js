@@ -7,6 +7,6 @@ define(function() {
             "writable": true
         }],
         "apis": [],
-        "events": ["onClickBtnBack"]
+        "events": ["onClickBtnBack", "onClickBtnSearch"]
     }
 });

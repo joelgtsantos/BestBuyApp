@@ -52,6 +52,7 @@ define(function() {
             "height": "27dp",
             "id": "btnSearch",
             "isVisible": true,
+            "onTouchStart": controller.AS_onClickBtnSearch_a76e84e9838c452aac0352e1b396e0dd,
             "right": "2%",
             "skin": "slImage",
             "src": "search_button.png",

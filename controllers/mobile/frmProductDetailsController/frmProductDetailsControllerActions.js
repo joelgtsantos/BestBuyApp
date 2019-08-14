@@ -4,6 +4,7 @@ define({
     */
     /** onClickBtnBack defined for HeaderJoel **/
     AS_UWI_e011a332b7ae474a9e1eca91491c720f: function AS_UWI_e011a332b7ae474a9e1eca91491c720f(eventobject) {
+        var self = this;
         this.onBtnBackClick();
     }
 });

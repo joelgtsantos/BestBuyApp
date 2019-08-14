@@ -30,7 +30,8 @@
     },
     "canUpdateUI": true,
     "children": [
-        "flxWrapper"
+        "flxWrapper",
+        "flxHMenu"
     ],
     "containerweight": 100,
     "controllerInfo": {

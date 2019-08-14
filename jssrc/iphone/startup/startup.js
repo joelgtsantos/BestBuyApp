@@ -1,7 +1,7 @@
 //startup.js
 var globalhttpheaders = {};
 var appConfig = {
-    appId: "JoelAjucumCert",
+    appId: "JABestBuyApp",
     appName: "JoelAjucumCert",
     appVersion: "1.0.0",
     isturlbase: "https://coned-dev.konycloud.com/services",
@@ -17,7 +17,7 @@ var appConfig = {
             "_internal_logout": "https://coned-dev.konycloud.com/services/IST",
             "BestBuyJAPI": "https://coned-dev.konycloud.com/services/BestBuyJAPI"
         },
-        "service_doc_etag": "0000016C918CDA58",
+        "service_doc_etag": "0000016C918FC088",
         "appId": "be253bf6-8541-4327-960f-3c9982138fd9",
         "identity_features": {
             "reporting_params_header_allowed": true

@@ -65,6 +65,50 @@ define("userfrmMainController", {
         this.currentCategories = this.categoriesNav[this.categoriesNav.length - 1];
         this.view.sgmCategories.removeAll();
         this.view.sgmCategories.setData(this.currentCategories);
+    },
+    /*
+     * To go back to a previous Product List within the same form
+     */
+    onClickBtnSearch: function onClickBtnSearch() {
+        try {
+            this.view.flxHMenu.animate(kony.ui.createAnimation({
+                "100": {
+                    "right": "0%",
+                    "stepConfig": {
+                        "timingFunction": kony.anim.EASE
+                    }
+                }
+            }), {
+                "delay": 0,
+                "iterationCount": 1,
+                "fillMode": kony.anim.FILL_MODE_FORWARDS,
+                "duration": 0.7
+            }, {
+                "animationEnd": function() {}
+            });
+        } catch (e) {}
+    },
+    /*
+     * To go back to a previous Product List within the same form
+     */
+    onClickBtnClose: function onClickBtnClose() {
+        try {
+            this.view.flxHMenu.animate(kony.ui.createAnimation({
+                "100": {
+                    "right": "-100%",
+                    "stepConfig": {
+                        "timingFunction": kony.anim.EASE
+                    }
+                }
+            }), {
+                "delay": 0,
+                "iterationCount": 1,
+                "fillMode": kony.anim.FILL_MODE_FORWARDS,
+                "duration": 0.7
+            }, {
+                "animationEnd": function() {}
+            });
+        } catch (e) {}
     }
 });
 define("frmMainControllerActions", {
@@ -73,11 +117,23 @@ define("frmMainControllerActions", {
     */
     /** onClickBtnBack defined for HeaderJoel **/
     AS_UWI_e011a332b7ae474a9e1eca91491c720f: function AS_UWI_e011a332b7ae474a9e1eca91491c720f(eventobject) {
+        var self = this;
         this.onBtnBackClick();
     },
     /** onRowClick defined for sgmCategories **/
     AS_Segment_e216b94e64b140a0b33d3495915c6005: function AS_Segment_e216b94e64b140a0b33d3495915c6005(eventobject, sectionNumber, rowNumber) {
+        var self = this;
         this.onCategoryClick(rowNumber);
+    },
+    /** onClickBtnSearch defined for HeaderJoel **/
+    AS_UWI_d4fb4673379b49b386e3a28216a4898e: function AS_UWI_d4fb4673379b49b386e3a28216a4898e(eventobject) {
+        var self = this;
+        this.onClickBtnSearch();
+    },
+    /** onTouchStart defined for imgReturn **/
+    AS_Image_f95c257016484171b47c03c2f035d9a0: function AS_Image_f95c257016484171b47c03c2f035d9a0(eventobject, x, y) {
+        var self = this;
+        this.onClickBtnClose();
     }
 });
 define("frmMainController", ["userfrmMainController", "frmMainControllerActions"], function() {
