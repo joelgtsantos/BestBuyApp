@@ -36,6 +36,9 @@ define("frmProductDetails", function() {
                     "btnBack": {
                         "isVisible": true
                     },
+                    "btnSearch": {
+                        "isVisible": false
+                    },
                     "HeaderJoel": {
                         "right": "viz.val_cleared",
                         "bottom": "viz.val_cleared",
@@ -524,6 +527,7 @@ define("frmProductDetails", function() {
                 "wrapping": constants.WIDGET_TEXT_WORD_WRAP
             });
             flxReviewsCount.add(lblReviewsCount);
+            kony.mvc.registry.add('Reviews', 'Reviews', 'ReviewsController');
             var sgmReviews = new kony.ui.SegmentedUI2({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "data": [{
@@ -675,7 +679,10 @@ define("frmProductDetails", function() {
             "id": "frmProductDetails",
             "layoutType": kony.flex.FREE_FORM,
             "needAppMenu": false,
-            "skin": "slForm"
+            "skin": "slForm",
+            "info": {
+                "kuid": "e9954b555c984cd38a26d2c7080def23"
+            }
         }, {
             "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,
             "layoutType": kony.flex.FREE_FORM,

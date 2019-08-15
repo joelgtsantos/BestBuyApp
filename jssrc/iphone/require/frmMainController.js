@@ -109,6 +109,18 @@ define("userfrmMainController", {
                 "animationEnd": function() {}
             });
         } catch (e) {}
+    },
+    /*
+     * To go back to a previous Product List within the same form
+     */
+    onClickBtnSearchP: function onClickBtnSearchP() {
+        const searchText = this.view.txtSearch.text;
+        const ntf = new kony.mvc.Navigation("frmProductsList");
+        const params = {};
+        params.from = "search";
+        params.searchText = searchText;
+        ntf.navigate(params);
+        kony.application.dismissLoadingScreen();
     }
 });
 define("frmMainControllerActions", {
@@ -134,6 +146,11 @@ define("frmMainControllerActions", {
     AS_Image_f95c257016484171b47c03c2f035d9a0: function AS_Image_f95c257016484171b47c03c2f035d9a0(eventobject, x, y) {
         var self = this;
         this.onClickBtnClose();
+    },
+    /** onTouchStart defined for btnSearch **/
+    AS_Button_a9914bca47c64c99990bb086d18ffb1d: function AS_Button_a9914bca47c64c99990bb086d18ffb1d(eventobject, x, y) {
+        var self = this;
+        this.onClickBtnSearchP();
     }
 });
 define("frmMainController", ["userfrmMainController", "frmMainControllerActions"], function() {

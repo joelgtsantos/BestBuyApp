@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "flxNavigation",
-        "flxMain"
+        "flxMain",
+        "flxEmptyResult"
     ],
     "clipbounds": true,
     "containerweight": 100,

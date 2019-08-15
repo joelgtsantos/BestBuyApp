@@ -1,11 +1,9 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "10%"
+        "value": "220dp"
     },
     "_left_": {
         "type": "string",
@@ -17,7 +15,7 @@
         0,
         0
     ],
-    "_orientation_": 1,
+    "_orientation_": 6,
     "_padding_": [
         0,
         0,
@@ -25,7 +23,6 @@
         0
     ],
     "_percent_": true,
-    "_render_": true,
     "_skin_": "s04aa8e647474f97b45d761d6e23d96d",
     "_top_": {
         "type": "string",
@@ -35,32 +32,30 @@
         "type": "string",
         "value": "100%"
     },
-    "autogrowmode": 0,
+    "allboxes": [],
     "canUpdateUI": true,
+    "children": [
+        "lblRsFound",
+        "lblTry"
+    ],
     "clipbounds": true,
-    "containerweight": 0,
-    "data": {
-        "ide_onClickBtnBack": "AS_UWI_e011a332b7ae474a9e1eca91491c720f",
-        "isVisibleBtnBack": true,
-        "isVisibleBtnSearch": false
-    },
+    "containerweight": 100,
     "enablescrolling": true,
-    "id": "HeaderJoel",
+    "id": "flxEmptyResult",
     "info": null,
     "iscustomlayout": false,
-    "issegmentchild": false,
-    "isvisible": true,
-    "kuid": "befa7fd6fa194abdbbe3e432828ac794",
-    "layouttype": 2,
-    "masterType": 1,
-    "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxWrapper",
-    "pf": "frmProductDetails",
+    "isvisible": false,
+    "kuid": "jb29dc32939045a7bd224cab97853994",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxContainer",
+    "pf": "frmProductsList",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
     "snapgridsize": 10,
     "snaptogrid": true,
-    "sourceUserWidget": "b2df5efc409341c6b2c860104de35f98",
-    "wType": "UserWidgetInstance"
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
 }

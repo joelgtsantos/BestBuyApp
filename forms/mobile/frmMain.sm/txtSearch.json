@@ -22,8 +22,8 @@
         0,
         0
     ],
-    "_placeholder_": "Search product",
-    "_skin_": "s6495e50649149cebc68af4f6a0c7364",
+    "_placeholder_": "Type product",
+    "_skin_": "s27a406443be484db47d27a51f88721a",
     "_text_": "",
     "_top_": {
         "type": "string",
@@ -47,6 +47,7 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
+    "keyboardstyle": "emailpad",
     "keyboardtype": "A",
     "kuid": "f1fff57aafcc49b9bde51988454719f2",
     "mode": "A",
@@ -61,5 +62,5 @@
     "tooltip": "",
     "viewtype": "default",
     "wType": "TextField",
-    "zindex": 1
+    "zindex": 100
 }

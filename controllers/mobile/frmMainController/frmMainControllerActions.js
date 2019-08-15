@@ -21,5 +21,10 @@ define({
     AS_Image_f95c257016484171b47c03c2f035d9a0: function AS_Image_f95c257016484171b47c03c2f035d9a0(eventobject, x, y) {
         var self = this;
         this.onClickBtnClose();
+    },
+    /** onTouchStart defined for btnSearch **/
+    AS_Button_a9914bca47c64c99990bb086d18ffb1d: function AS_Button_a9914bca47c64c99990bb086d18ffb1d(eventobject, x, y) {
+        var self = this;
+        this.onClickBtnSearchP();
     }
 });

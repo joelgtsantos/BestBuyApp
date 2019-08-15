@@ -41,7 +41,8 @@
     "containerweight": 0,
     "data": {
         "ide_onClickBtnBack": "AS_UWI_f9898d5af727447598f26d36083201ba",
-        "isVisibleBtnBack": true
+        "isVisibleBtnBack": true,
+        "isVisibleBtnSearch": false
     },
     "enablescrolling": true,
     "id": "HeaderJoel",

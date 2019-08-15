@@ -32,6 +32,12 @@ define("com/cognits/joel/HeaderJoel/HeaderJoelController", ["com/cognits/joel/He
         defineGetter(this, "isVisibleBtnBack", function() {
             return this.view.btnBack.isVisible;
         });
+        defineSetter(this, "isVisibleBtnSearch", function(val) {
+            this.view.btnSearch.isVisible = val;
+        });
+        defineGetter(this, "isVisibleBtnSearch", function() {
+            return this.view.btnSearch.isVisible;
+        });
         if (this.initGettersSetters) {
             this.initGettersSetters.apply(this, arguments);
         }

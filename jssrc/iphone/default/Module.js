@@ -115,3 +115,33 @@ function syncReviews(sku) {
         });
     });
 }
+/*
+ * To get a list of products base on a search text
+ * @Param search text STRING
+ */
+function syncProductsBySearch(searchText) {
+    return new Promise((resolve, reject) => {
+        const integrationClient = KNYMobileFabric.getIntegrationService("BestBuyJAPI");
+        const operationName = "getProductsBySearch";
+        const params = {
+            "SearchText": searchText
+        };
+        const headers = {};
+        integrationClient.invokeOperation(operationName, headers, params, function(result) {
+            let products = [];
+            for (let i = 0; i < result.products.length; i++) {
+                const product = {};
+                product.imgProduct = result.products[i].image;
+                product.lblProductName = result.products[i].name;
+                product.lblProductPrice = result.products[i].regularPrice;
+                product.lblAvgRating = result.products[i].customerReviewAverage;
+                product.sku = result.products[i].sku;
+                products.push(product);
+            }
+            resolve(products);
+        }, function(error) {
+            reject(error);
+            console.log("Integration Service Failure :" + JSON.stringify(error));
+        });
+    });
+}

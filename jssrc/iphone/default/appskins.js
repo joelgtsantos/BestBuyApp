@@ -2,11 +2,13 @@ function skinsInit() {
     CopyCopyslFbox3 = "CopyCopyslFbox3";
     CopyCopyslImage5 = "CopyCopyslImage5";
     CopyCopysliPhoneSegmentHeader5 = "CopyCopysliPhoneSegmentHeader5";
+    CopydefBtnFocus0a74c94d2d71a43 = "CopydefBtnFocus0a74c94d2d71a43";
     CopydefBtnNormal0h3eb70a63acd40 = "CopydefBtnNormal0h3eb70a63acd40";
     CopydefBtnNormal0h6fc2330b8ff4f = "CopydefBtnNormal0h6fc2330b8ff4f";
     CopydefLabel0b6bf4fccddc847 = "CopydefLabel0b6bf4fccddc847";
     CopydefLabel0be7e5898ac064a = "CopydefLabel0be7e5898ac064a";
     CopydefLabel0cc1728bca4bf44 = "CopydefLabel0cc1728bca4bf44";
+    CopydefLabel0d136a08ca36348 = "CopydefLabel0d136a08ca36348";
     CopydefLabel0e36612002cbe47 = "CopydefLabel0e36612002cbe47";
     CopydefLabel0f324dcc5e7d84c = "CopydefLabel0f324dcc5e7d84c";
     CopydefLabel0f423dabbface4b = "CopydefLabel0f423dabbface4b";
@@ -51,4 +53,5 @@ function skinsInit() {
     slTitleBar = "slTitleBar";
     slWatchForm = "slWatchForm";
     sliPhoneSegmentHeader = "sliPhoneSegmentHeader";
+    txtSkinSearch = "txtSkinSearch";
 };

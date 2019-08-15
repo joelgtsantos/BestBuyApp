@@ -73,6 +73,25 @@
                         "wType": "Image"
                     },
                     "srcWgtKUID": "d44e2cf05e894d328618834a60b5d12a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c98e51585b9f4da99947a9c0481f1369",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 2,
+                    "propertyKey": "isVisibleBtnSearch",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "isVisibleBtnSearch",
+                        "srcWidget": "btnSearch",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "a76e84e9838c452aac0352e1b396e0dd"
                 }
             ]
         },

@@ -19,6 +19,9 @@ define("frmProductsList", function() {
                     "btnBack": {
                         "isVisible": true
                     },
+                    "btnSearch": {
+                        "isVisible": false
+                    },
                     "HeaderJoel": {
                         "right": "viz.val_cleared",
                         "bottom": "viz.val_cleared",
@@ -107,6 +110,7 @@ define("frmProductsList", function() {
                 "retainFlowHorizontalAlignment": false
             }, {});
             flxMain.setDefaultUnit(kony.flex.DP);
+            kony.mvc.registry.add('ProductList', 'ProductList', 'ProductListController');
             var sgmProducts = new kony.ui.SegmentedUI2({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "data": [{
@@ -170,7 +174,60 @@ define("frmProductsList", function() {
                 "showProgressIndicator": true
             });
             flxMain.add(sgmProducts);
-            flxContainer.add(flxNavigation, flxMain);
+            var flxEmptyResult = new kony.ui.FlexContainer({
+                "clipBounds": true,
+                "height": "220dp",
+                "id": "flxEmptyResult",
+                "isVisible": false,
+                "layoutType": kony.flex.FLOW_VERTICAL,
+                "left": "0dp",
+                "isModalContainer": false,
+                "skin": "slFbox",
+                "top": "0dp",
+                "width": "100%",
+                "zIndex": 1
+            }, {
+                "retainFlowHorizontalAlignment": false
+            }, {});
+            flxEmptyResult.setDefaultUnit(kony.flex.DP);
+            var lblRsFound = new kony.ui.Label({
+                "id": "lblRsFound",
+                "isVisible": true,
+                "left": "0%",
+                "skin": "defLabel",
+                "text": "No results found",
+                "textStyle": {},
+                "top": "20%",
+                "width": "100%",
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {
+                "textCopyable": false,
+                "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+            });
+            var lblTry = new kony.ui.Label({
+                "id": "lblTry",
+                "isVisible": true,
+                "left": "0dp",
+                "skin": "CopydefLabel0d136a08ca36348",
+                "text": "Try different keywords",
+                "textStyle": {},
+                "top": "0dp",
+                "width": "100%",
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {
+                "textCopyable": false,
+                "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+            });
+            flxEmptyResult.add(lblRsFound, lblTry);
+            flxContainer.add(flxNavigation, flxMain, flxEmptyResult);
             this.add(HeaderJoel, flxContainer);
         };
         return [{
@@ -179,7 +236,10 @@ define("frmProductsList", function() {
             "id": "frmProductsList",
             "layoutType": kony.flex.FLOW_VERTICAL,
             "needAppMenu": false,
-            "skin": "slForm"
+            "skin": "slForm",
+            "info": {
+                "kuid": "gd982034bb564b06a3c4e8b327c8d95a"
+            }
         }, {
             "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,
             "layoutType": kony.flex.FLOW_VERTICAL,

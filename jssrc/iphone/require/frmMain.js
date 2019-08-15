@@ -229,15 +229,15 @@ define("frmMain", function() {
                 "height": "40dp",
                 "id": "txtSearch",
                 "isVisible": true,
-                "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
+                "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_EMAIL,
                 "left": "10dp",
-                "placeholder": "Search product",
+                "placeholder": "Type product",
                 "secureTextEntry": false,
-                "skin": "defTextBoxNormal",
+                "skin": "txtSkinSearch",
                 "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
                 "top": "7dp",
                 "width": "60%",
-                "zIndex": 1
+                "zIndex": 100
             }, {
                 "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
                 "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -253,11 +253,12 @@ define("frmMain", function() {
                 "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
             });
             var btnSearch = new kony.ui.Button({
-                "focusSkin": "defBtnFocus",
+                "focusSkin": "CopydefBtnFocus0a74c94d2d71a43",
                 "height": "40dp",
                 "id": "btnSearch",
                 "isVisible": true,
                 "left": 10,
+                "onTouchStart": controller.AS_Button_a9914bca47c64c99990bb086d18ffb1d,
                 "right": 50,
                 "skin": "CopydefBtnNormal0h6fc2330b8ff4f",
                 "text": "Search",

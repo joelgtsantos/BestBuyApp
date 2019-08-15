@@ -96,7 +96,7 @@ define({
         });
     } catch (e) {}
   },
-/*
+  /*
   * To go back to a previous Product List within the same form
   */
   onClickBtnClose: function onClickBtnClose(){
@@ -117,5 +117,18 @@ define({
             "animationEnd": function() {}
         });
     } catch (e) {}
+  },
+  /*
+  * To go back to a previous Product List within the same form
+  */
+  onClickBtnSearchP: function onClickBtnSearchP(){
+    const searchText = this.view.txtSearch.text;
+    
+    const ntf = new kony.mvc.Navigation("frmProductsList");
+    const params = {};
+    params.from = "search";
+    params.searchText = searchText;
+    ntf.navigate(params);
+    kony.application.dismissLoadingScreen();
   }
  });
