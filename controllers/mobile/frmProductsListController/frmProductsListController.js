@@ -33,6 +33,10 @@ define({
           this.view.lblNavHistory.text = `Category: ${params.categoryName}`;
           this.productList  = await syncProductsByCategory(params.categoryId);
           this.view.sgmProducts.setData(this.productList);
+          if(this.productList.length < 1){
+            this.view.flxEmptyResult.isVisible = true;
+            this.view.flxMain.isVisible = false;
+          }
         }
       }
 	}

@@ -121,7 +121,6 @@ define("frmMain", function() {
                 "retainFlowHorizontalAlignment": false
             }, {});
             flxMain.setDefaultUnit(kony.flex.DP);
-            kony.mvc.registry.add('Categories', 'Categories', 'CategoriesController');
             var sgmCategories = new kony.ui.SegmentedUI2({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "data": [{
@@ -284,10 +283,7 @@ define("frmMain", function() {
             "layoutType": kony.flex.FREE_FORM,
             "needAppMenu": false,
             "postShow": controller.AS_Form_dda301d161704c0594d8f54dc594af84,
-            "skin": "slForm",
-            "info": {
-                "kuid": "b185dbf691a64e2fbc3568cad0aa1a7d"
-            }
+            "skin": "slForm"
         }, {
             "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,
             "layoutType": kony.flex.FREE_FORM,

@@ -18,6 +18,7 @@ function skinsInit() {
     Copyseg04e93bcaf53d242 = "Copyseg04e93bcaf53d242";
     Copyseg0cddf1f7e9db24a = "Copyseg0cddf1f7e9db24a";
     CopyslFbox0a179a81bbf514a = "CopyslFbox0a179a81bbf514a";
+    CopyslFbox0d64e91d7aeaa4e = "CopyslFbox0d64e91d7aeaa4e";
     CopyslFbox0e8caf6165cdd49 = "CopyslFbox0e8caf6165cdd49";
     CopyslFbox0f3e5773cb44346 = "CopyslFbox0f3e5773cb44346";
     CopyslFbox0h0f8633129284f = "CopyslFbox0h0f8633129284f";

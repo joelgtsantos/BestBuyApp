@@ -110,7 +110,6 @@ define("frmProductsList", function() {
                 "retainFlowHorizontalAlignment": false
             }, {});
             flxMain.setDefaultUnit(kony.flex.DP);
-            kony.mvc.registry.add('ProductList', 'ProductList', 'ProductListController');
             var sgmProducts = new kony.ui.SegmentedUI2({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "data": [{
@@ -237,10 +236,7 @@ define("frmProductsList", function() {
             "layoutType": kony.flex.FLOW_VERTICAL,
             "needAppMenu": false,
             "postShow": controller.AS_Form_f2e23776e2bc45dd9251f2790ef446f7,
-            "skin": "slForm",
-            "info": {
-                "kuid": "gd982034bb564b06a3c4e8b327c8d95a"
-            }
+            "skin": "slForm"
         }, {
             "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,
             "layoutType": kony.flex.FLOW_VERTICAL,

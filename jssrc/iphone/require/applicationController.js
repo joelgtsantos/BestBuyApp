@@ -16,10 +16,11 @@ define({
         kony.mvc.registry.add("frmMain", "frmMain", "frmMainController");
         kony.mvc.registry.add("frmProductDetails", "frmProductDetails", "frmProductDetailsController");
         kony.mvc.registry.add("frmProductsList", "frmProductsList", "frmProductsListController");
+        kony.mvc.registry.add("frmSplash", "frmSplash", "frmSplashController");
         setAppBehaviors();
     },
     postAppInitCallBack: function(eventObj) {},
     appmenuseq: function() {
-        new kony.mvc.Navigation("frmMain").navigate();
+        new kony.mvc.Navigation("frmSplash").navigate();
     }
 });

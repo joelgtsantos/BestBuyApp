@@ -563,7 +563,6 @@ define("frmProductDetails", function() {
             }, {});
             CopyflxSeparator0c47fcddbb7ca4c.setDefaultUnit(kony.flex.DP);
             CopyflxSeparator0c47fcddbb7ca4c.add();
-            kony.mvc.registry.add('Reviews', 'Reviews', 'ReviewsController');
             var sgmReviews = new kony.ui.SegmentedUI2({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "data": [{
@@ -715,10 +714,7 @@ define("frmProductDetails", function() {
             "id": "frmProductDetails",
             "layoutType": kony.flex.FREE_FORM,
             "needAppMenu": false,
-            "skin": "slForm",
-            "info": {
-                "kuid": "e9954b555c984cd38a26d2c7080def23"
-            }
+            "skin": "slForm"
         }, {
             "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,
             "layoutType": kony.flex.FREE_FORM,

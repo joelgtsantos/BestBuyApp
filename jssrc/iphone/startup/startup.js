@@ -68,7 +68,7 @@ function themeCallBack() {
         init: applicationController.appInit,
         postappinit: applicationController.postAppInitCallBack,
         showstartupform: function() {
-            new kony.mvc.Navigation("frmMain").navigate();
+            new kony.mvc.Navigation("frmSplash").navigate();
         }
     });
 };
