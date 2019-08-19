@@ -5,6 +5,7 @@ define("userfrmProductsListController", {
         kony.application.showLoadingScreen(null, "Loading...", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
         this.view.flxEmptyResult.isVisible = false;
         this.view.flxMain.isVisible = true;
+        this.view.lblNavHistory.text = "";
         if (params !== null && params !== undefined) {
             if (params.from !== "productDetails") {
                 this.view.sgmProducts.removeAll();
@@ -51,21 +52,57 @@ define("userfrmProductsListController", {
         params.sku = this.productList[rowNumber].sku;
         ntf.navigate(params);
         kony.application.dismissLoadingScreen();
+    },
+    moveSegmentAnimation: function moveSegmentAnimation() {
+        let transformObj1 = kony.ui.makeAffineTransform();
+        transformObj1.scale(0, 0);
+        let transformObj2 = kony.ui.makeAffineTransform();
+        transformObj2.scale(1, 1);
+        let animationObject = kony.ui.createAnimation({
+            "0": {
+                "transform": transformObj1,
+                "stepConfig": {
+                    "timingFunction": kony.anim.LINEAR
+                }
+            },
+            "100": {
+                "transform": transformObj2,
+                "stepConfig": {
+                    "timingFunction": kony.anim.LINEAR
+                }
+            }
+        });
+        let animationConfig = {
+            duration: 1,
+            fillMode: kony.anim.FILL_MODE_FORWARDS
+        };
+        let animationDefObject = {
+            definition: animationObject,
+            config: animationConfig
+        };
+        this.view.sgmProducts.setAnimations({
+            visible: animationDefObject
+        });
     }
 });
 define("frmProductsListControllerActions", {
     /*
       This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
-    /** onClickBtnBack defined for HeaderJoel **/
-    AS_UWI_f9898d5af727447598f26d36083201ba: function AS_UWI_f9898d5af727447598f26d36083201ba(eventobject) {
-        var self = this;
-        this.onBtnBackClick();
-    },
     /** onRowClick defined for sgmProducts **/
     AS_Segment_babbdfa6ca7d4050a3627c51653b2735: function AS_Segment_babbdfa6ca7d4050a3627c51653b2735(eventobject, sectionNumber, rowNumber) {
         var self = this;
         this.onProductDetails(rowNumber);
+    },
+    /** postShow defined for frmProductsList **/
+    AS_Form_f2e23776e2bc45dd9251f2790ef446f7: function AS_Form_f2e23776e2bc45dd9251f2790ef446f7(eventobject) {
+        var self = this;
+        this.moveSegmentAnimation();
+    },
+    /** onClickBtnBack defined for HeaderJoel **/
+    AS_UWI_i0384a5d76f244d5abf9810f1b869bbd: function AS_UWI_i0384a5d76f244d5abf9810f1b869bbd(eventobject) {
+        var self = this;
+        this.onBtnBackClick();
     }
 });
 define("frmProductsListController", ["userfrmProductsListController", "frmProductsListControllerActions"], function() {

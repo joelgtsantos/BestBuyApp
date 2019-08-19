@@ -20,14 +20,29 @@ define({
   */
   setUpDetails: function(productDetails){
     new Promise((resolve, reject) => {
+      this.view.lblSale.isVisible = false;
+      this.view.lblCurrency.skin = "regularFontSkin";
+      this.view.lblProductPrice.skin = "regularFontSkin";
       
       // Filling up the product information
       this.view.imgProduct.src = productDetails.image;
       this.view.lblProductName.text = productDetails.name;
-      this.view.lblProductPrice.text = productDetails.regularPrice;
+      
       this.view.lblAvgRating.text = productDetails.customerReviewAverage;
       this.view.lblDescription.text = productDetails.shortDescription;
       const rating = Math.trunc(productDetails.customerReviewAverage);
+      
+      if(productDetails.onSale === "true"){
+        this.view.lblSale = {};
+        this.view.lblSale.isVisible = true;
+        this.view.lblProductPrice = {};
+        this.view.lblProductPrice.skin = "redFontSkin";
+        this.view.lblCurrency = {};
+        this.view.lblCurrency.skin = "redFontSkin";
+        this.view.lblProductPrice.text = productDetails.salePrice;
+      }else{
+        this.view.lblProductPrice.text = productDetails.regularPrice;
+      }
       
       // Setting stars based on rating
       for(let i = 0; i < 5; i++){

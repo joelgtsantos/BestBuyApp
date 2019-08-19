@@ -41,9 +41,20 @@ function syncProductsByCategory(categoryId){
       let products = [];
       for(let i = 0; i < result.products.length; i++){
 		const product = {};
+        if(result.products[i].onSale === "true"){
+          product.lblSale = {};
+          product.lblSale.isVisible = true;
+          product.lblProductPrice = {};
+          product.lblProductPrice.skin = "redFontSkin";
+          product.lblCurrency = {};
+          product.lblCurrency.skin = "redFontSkin";
+          product.lblProductPrice.text = result.products[i].salePrice;
+        }else{
+          product.lblProductPrice = result.products[i].regularPrice;
+        }
         product.imgProduct = result.products[i].image;
         product.lblProductName = result.products[i].name;
-        product.lblProductPrice = result.products[i].regularPrice;
+        
         product.lblAvgRating = result.products[i].customerReviewAverage;
         product.sku = result.products[i].sku;
         products.push(product);

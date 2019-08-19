@@ -5,7 +5,7 @@
     "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "10%"
+        "value": "11.23%"
     },
     "_left_": {
         "type": "string",
@@ -25,8 +25,7 @@
         0
     ],
     "_percent_": true,
-    "_render_": true,
-    "_skin_": "s04aa8e647474f97b45d761d6e23d96d",
+    "_skin_": "s2ccec6e46e74eb7b3a9c9b400a2795b",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -40,16 +39,15 @@
     "clipbounds": true,
     "containerweight": 0,
     "data": {
-        "ide_onClickBtnBack": "AS_UWI_e011a332b7ae474a9e1eca91491c720f",
-        "ide_onClickBtnSearch": "AS_UWI_d4fb4673379b49b386e3a28216a4898e"
+        "ide_onClickBtnBack": "AS_UWI_g705f89ccccf4d8ca6bf0b005c9b2501",
+        "ide_onClickBtnSearch": "AS_UWI_a1289c20276d4b4ab5e22e65a85101ff"
     },
     "enablescrolling": true,
     "id": "HeaderJoel",
     "info": null,
     "iscustomlayout": false,
-    "issegmentchild": false,
     "isvisible": true,
-    "kuid": "d87743af824d42d482d0dc078f37bab1",
+    "kuid": "ec17bb8067fe4ea099646bce3a02c442",
     "layouttype": 2,
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",

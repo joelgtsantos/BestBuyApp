@@ -10,7 +10,7 @@ define(function() {
             "layoutType": kony.flex.FREE_FORM,
             "left": "0dp",
             "isModalContainer": false,
-            "skin": "slFbox",
+            "skin": "CopyslFbox0f3e5773cb44346",
             "top": "0dp",
             "width": "100%"
         }, controller.args[0], "HeaderJoel"), extendConfig({
@@ -23,7 +23,7 @@ define(function() {
             "isVisible": false,
             "left": "2%",
             "onTouchStart": controller.AS_onClickBtnBack_d44e2cf05e894d328618834a60b5d12a,
-            "skin": "slImage",
+            "skin": "CopyslImage0d2c6050fecc24b",
             "src": "back_button.png",
             "top": "20dp",
             "width": "50dp",

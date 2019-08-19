@@ -5,7 +5,7 @@ define({
     kony.application.showLoadingScreen(null, "Loading...", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
   	this.view.flxEmptyResult.isVisible = false;
     this.view.flxMain.isVisible = true;
-
+	this.view.lblNavHistory.text = "";
   	if(params !== null && params !== undefined){
       
       if(params.from !== "productDetails"){
@@ -56,5 +56,23 @@ define({
   	params.sku = this.productList[rowNumber].sku;
   	ntf.navigate(params);
     kony.application.dismissLoadingScreen();
+  },
+  moveSegmentAnimation: function moveSegmentAnimation(){
+    let transformObj1 = kony.ui.makeAffineTransform();
+    transformObj1.scale(0, 0);
+    let transformObj2 = kony.ui.makeAffineTransform();
+    transformObj2.scale(1, 1);
+
+    let animationObject = kony.ui.createAnimation(
+      {"0":{"transform":transformObj1,"stepConfig":{"timingFunction":kony.anim.LINEAR}},
+		"100":{"transform":transformObj2,"stepConfig":{"timingFunction":kony.anim.LINEAR}}});
+
+  	let animationConfig = {
+      duration: 1,
+      fillMode: kony.anim.FILL_MODE_FORWARDS
+  	};
+
+ 	let animationDefObject={definition:animationObject,config:animationConfig};
+    this.view.sgmProducts.setAnimations({visible:animationDefObject});
   }
  });

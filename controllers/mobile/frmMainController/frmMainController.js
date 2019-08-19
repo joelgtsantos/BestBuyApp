@@ -81,7 +81,7 @@ define({
      try {
         this.view.flxHMenu.animate(kony.ui.createAnimation({
             "100": {
-                "right": "0%",
+                "top": "0%",
                 "stepConfig": {
                     "timingFunction": kony.anim.EASE
                 }
@@ -103,7 +103,7 @@ define({
      try {
         this.view.flxHMenu.animate(kony.ui.createAnimation({
             "100": {
-                "right": "-100%",
+                "top": "-100%",
                 "stepConfig": {
                     "timingFunction": kony.anim.EASE
                 }
@@ -130,5 +130,25 @@ define({
     params.searchText = searchText;
     ntf.navigate(params);
     kony.application.dismissLoadingScreen();
+  },
+  /*
+  * Animates the scroll
+  */
+  moveSegmentAnimation: function moveSegmentAnimation(){
+    let transformObj1 = kony.ui.makeAffineTransform();
+    transformObj1.translate(250, 0);
+    let transformObj2 = kony.ui.makeAffineTransform();
+    transformObj2.translate(0, 0); 
+
+    let animationObject = kony.ui.createAnimation(
+      {"0":{"transform":transformObj1,"stepConfig":{"timingFunction":kony.anim.LINEAR}},
+       "100":{"transform":transformObj2,"stepConfig":{"timingFunction":kony.anim.LINEAR}}});
+    
+    let animationConfig = {
+      duration: 1,
+      fillMode: kony.anim.FILL_MODE_FORWARDS
+    };
+    let animationDefObject={definition:animationObject,config:animationConfig};
+    this.view.sgmCategories.setAnimations({visible:animationDefObject});
   }
  });

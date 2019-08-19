@@ -73,7 +73,7 @@ define("userfrmMainController", {
         try {
             this.view.flxHMenu.animate(kony.ui.createAnimation({
                 "100": {
-                    "right": "0%",
+                    "top": "0%",
                     "stepConfig": {
                         "timingFunction": kony.anim.EASE
                     }
@@ -95,7 +95,7 @@ define("userfrmMainController", {
         try {
             this.view.flxHMenu.animate(kony.ui.createAnimation({
                 "100": {
-                    "right": "-100%",
+                    "top": "-100%",
                     "stepConfig": {
                         "timingFunction": kony.anim.EASE
                     }
@@ -121,26 +121,50 @@ define("userfrmMainController", {
         params.searchText = searchText;
         ntf.navigate(params);
         kony.application.dismissLoadingScreen();
+    },
+    /*
+     * Animates the scroll
+     */
+    moveSegmentAnimation: function moveSegmentAnimation() {
+        let transformObj1 = kony.ui.makeAffineTransform();
+        transformObj1.translate(250, 0);
+        let transformObj2 = kony.ui.makeAffineTransform();
+        transformObj2.translate(0, 0);
+        let animationObject = kony.ui.createAnimation({
+            "0": {
+                "transform": transformObj1,
+                "stepConfig": {
+                    "timingFunction": kony.anim.LINEAR
+                }
+            },
+            "100": {
+                "transform": transformObj2,
+                "stepConfig": {
+                    "timingFunction": kony.anim.LINEAR
+                }
+            }
+        });
+        let animationConfig = {
+            duration: 1,
+            fillMode: kony.anim.FILL_MODE_FORWARDS
+        };
+        let animationDefObject = {
+            definition: animationObject,
+            config: animationConfig
+        };
+        this.view.sgmCategories.setAnimations({
+            visible: animationDefObject
+        });
     }
 });
 define("frmMainControllerActions", {
     /*
       This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
-    /** onClickBtnBack defined for HeaderJoel **/
-    AS_UWI_e011a332b7ae474a9e1eca91491c720f: function AS_UWI_e011a332b7ae474a9e1eca91491c720f(eventobject) {
-        var self = this;
-        this.onBtnBackClick();
-    },
     /** onRowClick defined for sgmCategories **/
     AS_Segment_e216b94e64b140a0b33d3495915c6005: function AS_Segment_e216b94e64b140a0b33d3495915c6005(eventobject, sectionNumber, rowNumber) {
         var self = this;
         this.onCategoryClick(rowNumber);
-    },
-    /** onClickBtnSearch defined for HeaderJoel **/
-    AS_UWI_d4fb4673379b49b386e3a28216a4898e: function AS_UWI_d4fb4673379b49b386e3a28216a4898e(eventobject) {
-        var self = this;
-        this.onClickBtnSearch();
     },
     /** onTouchStart defined for imgReturn **/
     AS_Image_f95c257016484171b47c03c2f035d9a0: function AS_Image_f95c257016484171b47c03c2f035d9a0(eventobject, x, y) {
@@ -151,6 +175,21 @@ define("frmMainControllerActions", {
     AS_Button_a9914bca47c64c99990bb086d18ffb1d: function AS_Button_a9914bca47c64c99990bb086d18ffb1d(eventobject, x, y) {
         var self = this;
         this.onClickBtnSearchP();
+    },
+    /** postShow defined for frmMain **/
+    AS_Form_dda301d161704c0594d8f54dc594af84: function AS_Form_dda301d161704c0594d8f54dc594af84(eventobject) {
+        var self = this;
+        this.moveSegmentAnimation();
+    },
+    /** onClickBtnBack defined for HeaderJoel **/
+    AS_UWI_g705f89ccccf4d8ca6bf0b005c9b2501: function AS_UWI_g705f89ccccf4d8ca6bf0b005c9b2501(eventobject) {
+        var self = this;
+        this.onBtnBackClick();
+    },
+    /** onClickBtnSearch defined for HeaderJoel **/
+    AS_UWI_a1289c20276d4b4ab5e22e65a85101ff: function AS_UWI_a1289c20276d4b4ab5e22e65a85101ff(eventobject) {
+        var self = this;
+        this.onClickBtnSearch();
     }
 });
 define("frmMainController", ["userfrmMainController", "frmMainControllerActions"], function() {

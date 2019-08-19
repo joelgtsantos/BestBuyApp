@@ -37,7 +37,7 @@ define("flxProductList", function() {
             "id": "lblSale",
             "isVisible": false,
             "left": "0dp",
-            "skin": "CopydefLabel0f324dcc5e7d84c",
+            "skin": "regularFontSkin",
             "text": "!!!ON SALE!!!",
             "textStyle": {},
             "top": "0dp",

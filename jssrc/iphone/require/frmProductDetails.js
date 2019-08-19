@@ -22,14 +22,14 @@ define("frmProductDetails", function() {
             var HeaderJoel = new com.cognits.joel.HeaderJoel({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "clipBounds": true,
-                "height": "10%",
+                "height": "11.23%",
                 "id": "HeaderJoel",
                 "isVisible": true,
                 "layoutType": kony.flex.FREE_FORM,
                 "left": "0dp",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
-                "skin": "slFbox",
+                "skin": "CopyslFbox0f3e5773cb44346",
                 "top": "0dp",
                 "width": "100%",
                 "overrides": {
@@ -56,7 +56,7 @@ define("frmProductDetails", function() {
             }, {
                 "overrides": {}
             });
-            HeaderJoel.onClickBtnBack = controller.AS_UWI_e011a332b7ae474a9e1eca91491c720f;
+            HeaderJoel.onClickBtnBack = controller.AS_UWI_ja05c1394ca943718f1e7d5686159f9a;
             var flxContainer = new kony.ui.FlexContainer({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "clipBounds": true,
@@ -128,7 +128,7 @@ define("frmProductDetails", function() {
                 "id": "lblSale",
                 "isVisible": false,
                 "left": "0dp",
-                "skin": "CopydefLabel0f324dcc5e7d84c",
+                "skin": "regularFontSkin",
                 "text": "!!!ON SALE!!!",
                 "textStyle": {},
                 "top": "0dp",
@@ -474,6 +474,24 @@ define("frmProductDetails", function() {
             });
             flxDescription.add(lblDescription);
             flxProductDetails.add(flxSale, flxProductWrapper, flxDescription);
+            var flxSeparator = new kony.ui.FlexContainer({
+                "autogrowMode": kony.flex.AUTOGROW_NONE,
+                "clipBounds": true,
+                "height": "1dp",
+                "id": "flxSeparator",
+                "isVisible": true,
+                "layoutType": kony.flex.FREE_FORM,
+                "left": "0dp",
+                "isModalContainer": false,
+                "skin": "CopyslFbox0h0f8633129284f",
+                "top": "0dp",
+                "width": "100%",
+                "zIndex": 1
+            }, {
+                "retainFlowHorizontalAlignment": false
+            }, {});
+            flxSeparator.setDefaultUnit(kony.flex.DP);
+            flxSeparator.add();
             var flxReviewsContainer = new kony.ui.FlexContainer({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "clipBounds": true,
@@ -481,11 +499,11 @@ define("frmProductDetails", function() {
                 "id": "flxReviewsContainer",
                 "isVisible": true,
                 "layoutType": kony.flex.FLOW_VERTICAL,
-                "left": "0dp",
+                "left": "1%",
                 "isModalContainer": false,
                 "skin": "slFbox",
                 "top": "0dp",
-                "width": "100%",
+                "width": "98%",
                 "zIndex": 1
             }, {
                 "retainFlowHorizontalAlignment": false
@@ -527,6 +545,24 @@ define("frmProductDetails", function() {
                 "wrapping": constants.WIDGET_TEXT_WORD_WRAP
             });
             flxReviewsCount.add(lblReviewsCount);
+            var CopyflxSeparator0c47fcddbb7ca4c = new kony.ui.FlexContainer({
+                "autogrowMode": kony.flex.AUTOGROW_NONE,
+                "clipBounds": true,
+                "height": "1dp",
+                "id": "CopyflxSeparator0c47fcddbb7ca4c",
+                "isVisible": true,
+                "layoutType": kony.flex.FREE_FORM,
+                "left": "0dp",
+                "isModalContainer": false,
+                "skin": "CopyslFbox0h0f8633129284f",
+                "top": "0dp",
+                "width": "100%",
+                "zIndex": 1
+            }, {
+                "retainFlowHorizontalAlignment": false
+            }, {});
+            CopyflxSeparator0c47fcddbb7ca4c.setDefaultUnit(kony.flex.DP);
+            CopyflxSeparator0c47fcddbb7ca4c.add();
             kony.mvc.registry.add('Reviews', 'Reviews', 'ReviewsController');
             var sgmReviews = new kony.ui.SegmentedUI2({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -663,12 +699,12 @@ define("frmProductDetails", function() {
                 "bounces": true,
                 "editStyle": constants.SEGUI_EDITING_STYLE_NONE,
                 "enableDictionary": false,
-                "indicator": constants.SEGUI_ROW_SELECT,
+                "indicator": constants.SEGUI_NONE,
                 "progressIndicatorColor": constants.PROGRESS_INDICATOR_COLOR_WHITE,
                 "showProgressIndicator": true
             });
-            flxReviewsContainer.add(flxReviewsCount, sgmReviews);
-            flxMain.add(flxProductDetails, flxReviewsContainer);
+            flxReviewsContainer.add(flxReviewsCount, CopyflxSeparator0c47fcddbb7ca4c, sgmReviews);
+            flxMain.add(flxProductDetails, flxSeparator, flxReviewsContainer);
             flxContainer.add(flxMain);
             flxWrapper.add(HeaderJoel, flxContainer);
             this.add(flxWrapper);

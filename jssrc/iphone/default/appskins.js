@@ -10,7 +10,6 @@ function skinsInit() {
     CopydefLabel0cc1728bca4bf44 = "CopydefLabel0cc1728bca4bf44";
     CopydefLabel0d136a08ca36348 = "CopydefLabel0d136a08ca36348";
     CopydefLabel0e36612002cbe47 = "CopydefLabel0e36612002cbe47";
-    CopydefLabel0f324dcc5e7d84c = "CopydefLabel0f324dcc5e7d84c";
     CopydefLabel0f423dabbface4b = "CopydefLabel0f423dabbface4b";
     CopydefLabel0f918988d895846 = "CopydefLabel0f918988d895846";
     CopydefLabel0h10b6ec7cae247 = "CopydefLabel0h10b6ec7cae247";
@@ -20,7 +19,11 @@ function skinsInit() {
     Copyseg0cddf1f7e9db24a = "Copyseg0cddf1f7e9db24a";
     CopyslFbox0a179a81bbf514a = "CopyslFbox0a179a81bbf514a";
     CopyslFbox0e8caf6165cdd49 = "CopyslFbox0e8caf6165cdd49";
+    CopyslFbox0f3e5773cb44346 = "CopyslFbox0f3e5773cb44346";
+    CopyslFbox0h0f8633129284f = "CopyslFbox0h0f8633129284f";
+    CopyslFbox0hfd3404bb26b44 = "CopyslFbox0hfd3404bb26b44";
     CopyslForm07c0ae13367f944 = "CopyslForm07c0ae13367f944";
+    CopyslImage0d2c6050fecc24b = "CopyslImage0d2c6050fecc24b";
     CopyslLabel0a625a35ab5ef44 = "CopyslLabel0a625a35ab5ef44";
     CopyslLabel0c9d997f5f3cc44 = "CopyslLabel0c9d997f5f3cc44";
     CopyslLabel0f425e8b5116f4e = "CopyslLabel0f425e8b5116f4e";
@@ -32,6 +35,8 @@ function skinsInit() {
     defTextBoxNormal = "defTextBoxNormal";
     defTextBoxPlaceholder = "defTextBoxPlaceholder";
     konympPLsknLblStock = "konympPLsknLblStock";
+    redFontSkin = "redFontSkin";
+    regularFontSkin = "regularFontSkin";
     seg2Focus = "seg2Focus";
     seg2Normal = "seg2Normal";
     sknCategoryName = "sknCategoryName";

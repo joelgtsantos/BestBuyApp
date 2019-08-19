@@ -1,6 +1,6 @@
 {
-    "AS_UWI_f9898d5af727447598f26d36083201ba": {
-        "id": "AS_UWI_f9898d5af727447598f26d36083201ba",
+    "AS_Form_f2e23776e2bc45dd9251f2790ef446f7": {
+        "id": "AS_Form_f2e23776e2bc45dd9251f2790ef446f7",
         "type": "ACTION_SEQUENCE",
         "params": [{
             "datatype": "collection",
@@ -14,9 +14,9 @@
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__hfdfb547f74d4431be5151747ae99967",
+            "id": "ADD_SNIPPET__e5087eb571d94561bcd430e473c8900f",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "this.onBtnBackClick();",
+            "codeSnippet": "this.moveSegmentAnimation();",
             "parentId": null,
             "callbackType": null
         }]

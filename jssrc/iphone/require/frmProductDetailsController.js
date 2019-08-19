@@ -19,13 +19,26 @@ define("userfrmProductDetailsController", {
      */
     setUpDetails: function(productDetails) {
         new Promise((resolve, reject) => {
+            this.view.lblSale.isVisible = false;
+            this.view.lblCurrency.skin = "regularFontSkin";
+            this.view.lblProductPrice.skin = "regularFontSkin";
             // Filling up the product information
             this.view.imgProduct.src = productDetails.image;
             this.view.lblProductName.text = productDetails.name;
-            this.view.lblProductPrice.text = productDetails.regularPrice;
             this.view.lblAvgRating.text = productDetails.customerReviewAverage;
             this.view.lblDescription.text = productDetails.shortDescription;
             const rating = Math.trunc(productDetails.customerReviewAverage);
+            if (productDetails.onSale === "true") {
+                this.view.lblSale = {};
+                this.view.lblSale.isVisible = true;
+                this.view.lblProductPrice = {};
+                this.view.lblProductPrice.skin = "redFontSkin";
+                this.view.lblCurrency = {};
+                this.view.lblCurrency.skin = "redFontSkin";
+                this.view.lblProductPrice.text = productDetails.salePrice;
+            } else {
+                this.view.lblProductPrice.text = productDetails.regularPrice;
+            }
             // Setting stars based on rating
             for (let i = 0; i < 5; i++) {
                 this.view[`imgStar${i}`].src = "konymp_pl_star_inactive.png";
@@ -71,7 +84,7 @@ define("frmProductDetailsControllerActions", {
       This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
     /** onClickBtnBack defined for HeaderJoel **/
-    AS_UWI_e011a332b7ae474a9e1eca91491c720f: function AS_UWI_e011a332b7ae474a9e1eca91491c720f(eventobject) {
+    AS_UWI_ja05c1394ca943718f1e7d5686159f9a: function AS_UWI_ja05c1394ca943718f1e7d5686159f9a(eventobject) {
         var self = this;
         this.onBtnBackClick();
     }

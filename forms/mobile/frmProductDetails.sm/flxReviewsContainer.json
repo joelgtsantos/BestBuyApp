@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "1%"
     },
     "_margin_": [
         0,
@@ -30,13 +30,14 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "98%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
         "flxReviewsCount",
+        "CopyflxSeparator0c47fcddbb7ca4c",
         "sgmReviews"
     ],
     "clipbounds": true,

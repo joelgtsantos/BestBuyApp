@@ -64,7 +64,7 @@ define("flxContainer", function() {
             "isModalContainer": false,
             "skin": "slFbox",
             "top": "0dp",
-            "width": "100%",
+            "width": "50%",
             "zIndex": 1
         }, {
             "retainFlowHorizontalAlignment": false

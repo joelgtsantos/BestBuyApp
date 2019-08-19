@@ -5,14 +5,14 @@ define("frmProductsList", function() {
             var HeaderJoel = new com.cognits.joel.HeaderJoel({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "clipBounds": true,
-                "height": "10%",
+                "height": "11.23%",
                 "id": "HeaderJoel",
                 "isVisible": true,
                 "layoutType": kony.flex.FREE_FORM,
                 "left": "0dp",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
-                "skin": "slFbox",
+                "skin": "CopyslFbox0f3e5773cb44346",
                 "top": "0dp",
                 "width": "100%",
                 "overrides": {
@@ -39,7 +39,7 @@ define("frmProductsList", function() {
             }, {
                 "overrides": {}
             });
-            HeaderJoel.onClickBtnBack = controller.AS_UWI_f9898d5af727447598f26d36083201ba;
+            HeaderJoel.onClickBtnBack = controller.AS_UWI_i0384a5d76f244d5abf9810f1b869bbd;
             var flxContainer = new kony.ui.FlexContainer({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "clipBounds": true,
@@ -236,6 +236,7 @@ define("frmProductsList", function() {
             "id": "frmProductsList",
             "layoutType": kony.flex.FLOW_VERTICAL,
             "needAppMenu": false,
+            "postShow": controller.AS_Form_f2e23776e2bc45dd9251f2790ef446f7,
             "skin": "slForm",
             "info": {
                 "kuid": "gd982034bb564b06a3c4e8b327c8d95a"

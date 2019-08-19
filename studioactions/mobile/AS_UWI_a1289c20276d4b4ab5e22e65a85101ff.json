@@ -1,6 +1,6 @@
 {
-    "AS_UWI_e011a332b7ae474a9e1eca91491c720f": {
-        "id": "AS_UWI_e011a332b7ae474a9e1eca91491c720f",
+    "AS_UWI_a1289c20276d4b4ab5e22e65a85101ff": {
+        "id": "AS_UWI_a1289c20276d4b4ab5e22e65a85101ff",
         "type": "ACTION_SEQUENCE",
         "params": [{
             "datatype": "collection",
@@ -14,9 +14,9 @@
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__a66a8ef4fe744e4897d8d4833dfeac51",
+            "id": "ADD_SNIPPET__cdec9da24b6c4065a496c3a290f9254e",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "this.onBtnBackClick();",
+            "codeSnippet": "this.onClickBtnSearch();",
             "parentId": null,
             "callbackType": null
         }]

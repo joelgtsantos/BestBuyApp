@@ -22,14 +22,14 @@ define("frmMain", function() {
             var HeaderJoel = new com.cognits.joel.HeaderJoel({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "clipBounds": true,
-                "height": "10%",
+                "height": "11.23%",
                 "id": "HeaderJoel",
                 "isVisible": true,
                 "layoutType": kony.flex.FREE_FORM,
                 "left": "0dp",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
-                "skin": "slFbox",
+                "skin": "CopyslFbox0f3e5773cb44346",
                 "top": "0dp",
                 "width": "100%",
                 "overrides": {
@@ -50,8 +50,8 @@ define("frmMain", function() {
             }, {
                 "overrides": {}
             });
-            HeaderJoel.onClickBtnBack = controller.AS_UWI_e011a332b7ae474a9e1eca91491c720f;
-            HeaderJoel.onClickBtnSearch = controller.AS_UWI_d4fb4673379b49b386e3a28216a4898e;
+            HeaderJoel.onClickBtnBack = controller.AS_UWI_g705f89ccccf4d8ca6bf0b005c9b2501;
+            HeaderJoel.onClickBtnSearch = controller.AS_UWI_a1289c20276d4b4ab5e22e65a85101ff;
             var flxContainer = new kony.ui.FlexContainer({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "clipBounds": true,
@@ -181,10 +181,10 @@ define("frmMain", function() {
                 "isVisible": true,
                 "layoutType": kony.flex.FREE_FORM,
                 "isModalContainer": false,
-                "right": "-100%",
+                "right": 0,
                 "skin": "CopyslFbox0a179a81bbf514a",
-                "top": "0dp",
-                "width": "100%",
+                "top": "-100%",
+                "width": "101%",
                 "zIndex": 1
             }, {
                 "retainFlowHorizontalAlignment": false
@@ -283,6 +283,7 @@ define("frmMain", function() {
             "id": "frmMain",
             "layoutType": kony.flex.FREE_FORM,
             "needAppMenu": false,
+            "postShow": controller.AS_Form_dda301d161704c0594d8f54dc594af84,
             "skin": "slForm",
             "info": {
                 "kuid": "b185dbf691a64e2fbc3568cad0aa1a7d"
